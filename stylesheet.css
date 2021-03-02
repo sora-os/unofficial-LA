@@ -1,6 +1,1 @@
-<@charset "UTF-8";>
-h1.bg-red {
- color: #ffffff;
- background-color: #ff0000;
- padding: 5px;
-}
+body {background-color: blue}
