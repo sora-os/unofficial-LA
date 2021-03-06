@@ -2,11 +2,13 @@
 
 body{background-image:url("back.jpg");}
 
-h1{
-  color:blue;
-  font-size:16px;
-}
 a{
   color:blue;
   font-size:25px;
 }
+
+h1{
+  color:blue;
+  font-size:16px;
+}
+
