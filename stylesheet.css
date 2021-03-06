@@ -1,7 +1,7 @@
 @charset"UTF-8";
-.bg_test {
-    background-image: url{back.jpg};
-}
+
+background-image:url(back.jpg);
+
 h1{
   color:blue;
   font-size:16px;
