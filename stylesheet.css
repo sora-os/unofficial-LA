@@ -1,6 +1,8 @@
 @charset"UTF-8";
 
-body{background-image:url("back.jpg");}
+body{
+background-image:url("back.jpg");
+background-position:50% 50%}
 
 a{
   color:red;
