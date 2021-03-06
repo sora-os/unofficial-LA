@@ -1,6 +1,6 @@
 @charset"UTF-8";
 
-background-image:url(back.jpg);
+body{background-image:url("back.jpg");}
 
 h1{
   color:blue;
