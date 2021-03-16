@@ -1,31 +1,544 @@
-<html>
-<head>
-<title>ライフアフター最新情報</title>
-<link rel="stylesheet"href="stylesheet.css">
-</head>
+<<h1>改造シュミレーター</h1>
+<from name="forml">
+    <input type="button" value="武器 改造" onclick="gacha()">
+</from>
 
-<a href="index.html">トップ</a>
-  <a href="appdate.html">アプデ情報</a>
-  <a href="kakuritu.html">確率公示</a>
-  <a href="info.html">お知らせ</a>
-  <a href="senkou.html">先行体験サーバー</a><br>
+<br />
 
-  
-<body>
-  
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
-                                             
-<img src="NGEC-logo02.png"
- width="300" height="100" alt="ngec">
-<img src="life-logo.png"
- width="300" height="100" alt="lifeafter"><br>
-  
-  
+<div id="kogeki"></div>
+
+<div id="steas1" \n></div>
+
+<div id="steas2" \n></div>
+
+<div id="steas3" \n></div>
+
+<div id="sukil" \n></div>
+
+<div id="date" \n></div>
+
+<div id="date2" \n></div>
+
+<div id="date3" \n></div>
 
 
-<h1>非公式ライフアフター最新情報<h1/>
- <br><br>
+<script type="text/javascript">
 
-</div>
-</body>
-</html>
+
+    function gacha() {
+
+        k = Math.random();
+
+        document.getElementById("date").innerHTML = k;
+
+        if (k < 0.0952) {
+            ka = ("攻撃力：10");
+            document.getElementById("kogeki").innerHTML = ka;
+        }
+
+        else if (k > 0.0953 && k < 0.1904) {
+            ka = ("攻撃力：11");
+            document.getElementById("kogeki").innerHTML = ka;
+        }
+
+        else if (k > 0.1905 && k < 0.4761) {
+            ka = ("攻撃力：12");
+            document.getElementById("kogeki").innerHTML = ka;
+        }
+
+        else if (k > 0.4762 && k < 0.7618) {
+            ka = ("攻撃力：13");
+            document.getElementById("kogeki").innerHTML = ka;
+        }
+
+        else if (k > 0.7619 && k < 0.9523) {
+            ka = ("攻撃力：14");
+            document.getElementById("kogeki").innerHTML = ka;
+        }
+
+        else if (k > 0.9524 && k < 1) {
+            ka = ("攻撃力：15");
+            document.getElementById("kogeki").innerHTML = ka;
+        }
+
+
+        if (k < 0.7216) {
+            document.getElementById("steas1").innerHTML = "ステータス1：なし";
+            document.getElementById("steas2").innerHTML = "ステータス2：なし";
+            document.getElementById("steas3").innerHTML = "ステータス3：なし";
+
+        }
+
+        else if (k > 0.7217 && k < 0.8762) {
+            r = Math.random();
+
+            if (r < 0.0532) {
+                document.getElementById("steas1").innerHTML = "ステータス1：射撃速度";
+                document.getElementById("steas2").innerHTML = "ステータス2：なし";
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.0533 && r < 0.1064) {
+                document.getElementById("steas1").innerHTML = "ステータス1：ヘッドショットダメージ";
+                document.getElementById("steas2").innerHTML = "ステータス2：なし";
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.1065 && r < 0.2128) {
+                document.getElementById("steas1").innerHTML = "ステータス1：リロード速度";
+                document.getElementById("steas2").innerHTML = "ステータス2：なし";
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.2129 && r < .03192) {
+                document.getElementById("steas1").innerHTML = "ステータス1：散布率減少";
+                document.getElementById("steas2").innerHTML = "ステータス2：なし";
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.3193 && r < 0.4256) {
+
+                document.getElementById("steas1").innerHTML = "ステータス1：反動力低下";
+                document.getElementById("steas2").innerHTML = "ステータス2：なし";
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.4257 && r < 0.5320) {
+
+                document.getElementById("steas1").innerHTML = "ステータス1：感染者ダメージ";
+                document.getElementById("steas2").innerHTML = "ステータス2：なし";
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.5321 && r < 0.6348) {
+                document.getElementById("steas1").innerHTML = "ステータス1：人型モンスターダメージ";
+                document.getElementById("steas2").innerHTML = "ステータス2：なし";
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.6349 && r < 0.7448) {
+                document.getElementById("steas1").innerHTML = "ステータス1：野生動物ダメージ";
+                document.getElementById("steas2").innerHTML = "ステータス2：なし";
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.7449 && r < 0.8512) {
+                document.getElementById("steas1").innerHTML = "ステータス1：建築ダメージ";
+                document.getElementById("steas2").innerHTML = "ステータス2：なし";
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.8513 && r < 0.8938) {
+                document.getElementById("steas1").innerHTML = "ステータス1：CR率";
+                document.getElementById("steas2").innerHTML = "ステータス2：なし";
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.8939 && r < 1) {
+                document.getElementById("steas1").innerHTML = "ステータス1：精密";
+                document.getElementById("steas2").innerHTML = "ステータス2：なし";
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+        }
+
+        else if (k > 0.8763 && k < 0.9792) {
+
+            r = Math.random();
+
+            if (r < 0.0532) {
+                document.getElementById("steas1").innerHTML = "ステータス1：射撃速度";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.0533 && r < 0.1064) {
+                document.getElementById("steas1").innerHTML = "ステータス1：ヘッドショットダメージ";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.1065 && r < 0.2128) {
+                document.getElementById("steas1").innerHTML = "ステータス1：リロード速度";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.2129 && r < .03192) {
+                document.getElementById("steas1").innerHTML = "ステータス1：散布率減少";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.3193 && r < 0.4256) {
+
+                document.getElementById("steas1").innerHTML = "ステータス1：反動力低下";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.4257 && r < 0.5320) {
+
+                document.getElementById("steas1").innerHTML = "ステータス1：感染者ダメージ";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.5321 && r < 0.6348) {
+                document.getElementById("steas1").innerHTML = "ステータス1：人型モンスターダメージ";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.6349 && r < 0.7448) {
+                document.getElementById("steas1").innerHTML = "ステータス1：野生動物ダメージ";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r> 0.7449 && r < 0.8512) {
+                document.getElementById("steas1").innerHTML = "ステータス1：建築ダメージ";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.8513 && r < 0.8938) {
+                document.getElementById("steas1").innerHTML = "ステータス1：CR率";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.8939 && r < 1) {
+                document.getElementById("steas1").innerHTML = "ステータス1：精密";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+
+
+            r = Math.random();
+
+            if (r < 0.0532) {
+                document.getElementById("steas2").innerHTML = "ステータス2:射撃速度";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.0533 && r < 0.1064) {
+                document.getElementById("steas2").innerHTML = "ステータス2：ヘッドショットダメージ";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.1065 && r < 0.2128) {
+                document.getElementById("steas2").innerHTML = "ステータス2：リロード速度";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.2129 && r < .03192) {
+                document.getElementById("steas2").innerHTML = "ステータス2：散布率減少";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.3193 && r < 0.4256) {
+
+                document.getElementById("steas2").innerHTML = "ステータス2：反動力低下";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.4257 && r< 0.5320) {
+
+                document.getElementById("steas2").innerHTML = "ステータス2：感染者ダメージ";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.5321 && r < 0.6348) {
+                document.getElementById("steas2").innerHTML = "ステータス2：人型モンスターダメージ";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.6349 && r < 0.7448) {
+                document.getElementById("steas2").innerHTML = "ステータス2：野生動物ダメージ";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.7449 && r < 0.8512) {
+                document.getElementById("steas2").innerHTML = "ステータス2：建築ダメージ";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r > 0.8513 && r < 0.8938) {
+                document.getElementById("steas2").innerHTML = "ステータス2：CR率";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+
+            else if (r> 0.8939 && r < 1) {
+                document.getElementById("steas2").innerHTML = "ステータス2：精密";
+
+                document.getElementById("steas3").innerHTML = "ステータス3：なし";
+            }
+        }
+
+
+
+        else if (k > 0.9793 && k < 1) {
+
+            r = Math.random();
+
+            if (r < 0.0532) {
+                document.getElementById("steas1").innerHTML = "ステータス1：射撃速度";
+
+
+            }
+
+            else if (r > 0.0533 && r < 0.1064) {
+                document.getElementById("steas1").innerHTML = "ステータス1：ヘッドショットダメージ";
+
+
+            }
+
+            else if (r > 0.1065 && r < 0.2128) {
+                document.getElementById("steas1").innerHTML = "ステータス1：リロード速度";
+
+
+            }
+
+            else if (r > 0.2129 && r < .03192) {
+                document.getElementById("steas1").innerHTML = "ステータス1：散布率減少";
+
+
+            }
+
+            else if (r > 0.3193 && r < 0.4256) {
+
+                document.getElementById("steas1").innerHTML = "ステータス1：反動力低下";
+
+
+            }
+
+            else if (r > 0.4257 && r < 0.5320) {
+
+                document.getElementById("steas1").innerHTML = "ステータス1：感染者ダメージ";
+
+
+            }
+
+            else if (r > 0.5321 && r < 0.6348) {
+                document.getElementById("steas1").innerHTML = "ステータス1：人型モンスターダメージ";
+
+
+            }
+
+            else if (r > 0.6349 && r < 0.7448) {
+                document.getElementById("steas1").innerHTML = "ステータス1：野生動物ダメージ";
+
+
+            }
+
+            else if (r > 0.7449 && r < 0.8512) {
+                document.getElementById("steas1").innerHTML = "ステータス1：建築ダメージ";
+
+
+            }
+
+            else if (r > 0.8513 && r < 0.8938) {
+                document.getElementById("steas1").innerHTML = "ステータス1：CR率";
+
+
+            }
+
+            else if (r > 0.8939 && r < 1) {
+                document.getElementById("steas1").innerHTML = "ステータス1：精密";
+
+
+            }
+
+
+
+            r = Math.random();
+
+            if (r < 0.0532) {
+                document.getElementById("steas2").innerHTML = "ステータス2:射撃速度";
+
+
+            }
+
+            else if (r > 0.0533 && r < 0.1064) {
+                document.getElementById("steas2").innerHTML = "ステータス2：ヘッドショットダメージ";
+
+
+            }
+
+            else if (r > 0.1065 && r < 0.2128) {
+                document.getElementById("steas2").innerHTML = "ステータス2：リロード速度";
+
+
+            }
+
+            else if (r > 0.2129 && r < .03192) {
+                document.getElementById("steas2").innerHTML = "ステータス2：散布率減少";
+
+
+            }
+
+            else if (r > 0.3193 && r < 0.4256) {
+
+                document.getElementById("steas2").innerHTML = "ステータス2：反動力低下";
+
+
+            }
+
+            else if (r > 0.4257 && r < 0.5320) {
+
+                document.getElementById("steas2").innerHTML = "ステータス2：感染者ダメージ";
+
+
+            }
+
+            else if (r > 0.5321 && r < 0.6348) {
+                document.getElementById("steas2").innerHTML = "ステータス2：人型モンスターダメージ";
+
+
+            }
+
+            else if (r > 0.6349 && r < 0.7448) {
+                document.getElementById("steas2").innerHTML = "ステータス2：野生動物ダメージ";
+
+
+            }
+
+            else if (r > 0.7449 && r < 0.8512) {
+                document.getElementById("steas2").innerHTML = "ステータス2：建築ダメージ";
+
+
+            }
+
+            else if (r > 0.8513 && r < 0.8938) {
+                document.getElementById("steas2").innerHTML = "ステータス2：CR率";
+
+
+            }
+
+            else if (r > 0.8939 && r < 1) {
+                document.getElementById("steas2").innerHTML = "ステータス2：精密";
+
+
+            }
+
+
+            r = Math.random();
+
+            if (r < 0.0532) {
+                document.getElementById("steas3").innerHTML = "ステータス3:射撃速度";
+
+
+            }
+
+            else if (r > 0.0533 && r < 0.1064) {
+                document.getElementById("steas3").innerHTML = "ステータス3：ヘッドショットダメージ";
+
+
+            }
+
+            else if (r > 0.1065 && r < 0.2128) {
+                document.getElementById("steas3").innerHTML = "ステータス3：リロード速度";
+
+
+            }
+
+            else if (r > 0.2129 && r < .03192) {
+                document.getElementById("steas3").innerHTML = "ステータス3：散布率減少";
+
+
+            }
+
+            else if (r > 0.3193 && r < 0.4256) {
+
+                document.getElementById("steas3").innerHTML = "ステータス3：反動力低下";
+
+
+            }
+
+            else if (r > 0.4257 && r < 0.5320) {
+
+                document.getElementById("steas3").innerHTML = "ステータス3：感染者ダメージ";
+
+
+            }
+
+            else if (r > 0.5321 && r < 0.6348) {
+                document.getElementById("steas3").innerHTML = "ステータス3：人型モンスターダメージ";
+
+
+            }
+
+            else if (r > 0.6349 && r < 0.7448) {
+                document.getElementById("steas3").innerHTML = "ステータス3：野生動物ダメージ";
+
+
+            }
+
+            else if (r > 0.7449 && r < 0.8512) {
+                document.getElementById("steas3").innerHTML = "ステータス3：建築ダメージ";
+
+
+            }
+
+            else if (r > 0.8513 && r < 0.8938) {
+                document.getElementById("steas3").innerHTML = "ステータス3：CR率";
+
+
+            }
+
+            else if (r > 0.8939 && r < 1) {
+                document.getElementById("steas3").innerHTML = "ステータス3：精密";
+
+
+            }
+        }
+
+
+        k = Math.random();
+        document.getElementById("date2").innerHTML = k;
+
+        if (k < 0.9) [
+            document.getElementById("sukil").innerHTML = "スキル：なし"
+        ]
+
+        else if (k > 0.9) {
+            r = Math.random();
+
+            document.getElementById("date3").innerHTML =r
+
+            if (r < 0.3333) {
+                document.getElementById("sukil").innerHTML = "スキル：精製";
+            }
+
+            else if (r > 0.3333 && r < 0.6666) {
+                document.getElementById("sukil").innerHTML = "スキル：トレース弾";
+            }
+
+            else if (r > 0.6666 && r < 0.8) {
+                document.getElementById("sukil").innerHTML = "スキル：血浴び";
+            }
+
+            else if (r > 0.8 && r < 1) {
+                document.getElementById("sukil").innerHTML = "スキル：傷つけ";
+            }
+
+
+        }
+
+    }
+    
+
+        
+
+</script>
