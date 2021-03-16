@@ -15,11 +15,12 @@ input{
 
 
 a{
+    color:white;
     font-size: 15px;
 }
     
 div{
-    color: green;
+    color: dodgerblue;
     font-size: 25px;
     text-align: center;
 }
