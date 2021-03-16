@@ -1,5 +1,9 @@
 @charset"UTF-8";
 
+body{
+    background-image: url("life01.png")
+}
+
 input{
     font-size:30px;
     background-image: linear-gradient(0deg, #a7d9f5, #eaf6fd); /* グラデーション */
