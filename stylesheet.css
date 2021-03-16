@@ -4,9 +4,10 @@ body{
 background-image:url("back.jpg");
 background-position:50% 50%}
 
-a{
-  color:red;
-  font-size:25px;
+div {
+    color: #FF00FF;
+    font-size: 25px;
+    text-align:center;
 }
 
 h1{
