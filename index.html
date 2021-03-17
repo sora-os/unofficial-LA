@@ -27,23 +27,24 @@
 
 <div id="steas3" \n></div>
 
-<div id="sukil" \n></div>
+<div id="sukil" \n\n></div>
 
-<div id="date" \n></div>
+改造回数<div id="date" \n></div>
 
 <div id="date2" \n></div>
 
 <div id="date3" \n></div>
 
-
+i=0;
 <script type="text/javascript">
 
 
     function gacha() {
 
         k = Math.random();
+        i = i+1;
 
-        document.getElementById("date").innerHTML = k;
+        document.getElementById("date").innerHTML = i ;
 
         if (k < 0.0952) {
             ka = ("攻撃力：10");
