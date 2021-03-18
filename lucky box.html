@@ -1,26 +1,48 @@
 <h1>3/18 ラッキーボックス</h1>
 
 <from name="forml">
-    <input type="button" value="1回回す" onclick="gacha()">
+    <input type="button" value="小切手120：１回" onclick="gacha()">
+
+    <input type="button" value="小切手500：５回:" onclick="gacha5()">
+
 </from>
 
-<br/>
+<br />
 獲得アイテム：<div id="haisyutu">-</div>
-<br/>
+
+
+<div id="haisyutu2">-</div>
+
+<div id="haisyutu3">-</div>
+
+<div id="haisyutu4">-</div>
+
+<div id="haisyutu5">-</div>
+<br />
 
 ガチャ回数：<div id="kaisu">-</div>
-<br/>
+<br />
 
-date:<div id="date"></div>
+date:<div id="date">-</div>
+<div id="date2">-</div>
+<div id="date3">-</div>
+<div id="date4">-</div>
+<div id="date5">-</div>
+<div id="aizo">-</div>
+<div id="aizo1">-</div>
 
 
 <script type="text/javascript">
 
     count = 0;
+    y = 0
+    m = 0
+
+
 
     function gacha() {
 
-     
+
         r = Math.random() * 101;
 
         document.getElementById("date").innerHTML = r;
@@ -34,7 +56,7 @@ date:<div id="date"></div>
             document.getElementById("haisyutu").innerHTML = "烈火獅子王";
 
         }
-        
+
         else if (r < 1.42 && 0.57 > r) {
             document.getElementById("haisyutu").innerHTML = "雷轟獅子";
 
@@ -98,12 +120,12 @@ date:<div id="date"></div>
                 document.getElementById("haisyutu").innerHTML = "墨・木に咲く花";
             }
 
-            else if(50 < i){
+            else if (50 < i) {
                 document.getElementById("haisyutu").innerHTML = "翠・木に咲く花";
 
             }
 
-            
+
 
         }
 
@@ -114,11 +136,11 @@ date:<div id="date"></div>
                 document.getElementById("haisyutu").innerHTML = "墨・黄梁の夢";
             }
 
-            else if(50 < i){
+            else if (50 < i) {
                 document.getElementById("haisyutu").innerHTML = "翠・黄梁の夢";
 
             }
-            
+
 
         }
 
@@ -129,11 +151,11 @@ date:<div id="date"></div>
                 document.getElementById("haisyutu").innerHTML = "墨・巻き幕に飛ぶ燕";
             }
 
-            else if(50 < i){
+            else if (50 < i) {
                 document.getElementById("haisyutu").innerHTML = "翠・巻き幕に飛ぶ燕";
 
             }
-            
+
 
         }
 
@@ -186,5 +208,217 @@ date:<div id="date"></div>
         document.getElementById("kaisu").innerHTML = count;
 
     }
+
+    function gacha5() {
+
+        z = 0
+        
+
+        while (z < 1000) {
+
+            z = z + 1
+
+            r = Math.random();
+
+
+
+            if (r < 0.0023) {
+                x = "愛蔵：メルトタイガー";
+                y = y + 1
+
+            }
+
+            else if (r < 0.0057 && 0.0023 < r) {
+                x = "烈火獅子王";
+                m = m + 1
+
+            }
+
+            else if (r < 0.0142 && 0.0057 < r) {
+                x = "雷轟獅子";
+
+            }
+
+            else if (r < 0.0369 && 0.0142 < r) {
+                x = "自爆ドローン";
+
+            }
+
+            else if (r < 0.0403 && 0.0369 < r) {
+                x = "愛蔵：アイアンアーム";
+                
+            }
+
+            else if (r < 0.0448 && 0.0403 < r) {
+                x = "飛行巨獣";
+
+
+            }
+
+            else if (r < 0.0533 && 0.0448 < r) {
+                x = "黒曜マンモス";
+
+            }
+
+            else if (r < 0.0760 && 0.0533 < r) {
+                x = "重荷ドローン";
+
+            }
+
+            else if (r < 0.0931 && 0.0760 < r) {
+                x = "破れたページ999";
+
+            }
+
+            else if (r < 0.0976 && 0.0931 < r) {
+                i = Math.random() * 101;
+
+                if (i < 33.333) {
+                    x = "墨・国土の絵巻";
+
+                }
+
+                else if (r > 33.33 && 66.66 > r) {
+                    x = "翠・国土の絵巻";
+
+                }
+
+                else if (r > 66.66) {
+                    x = "曜・国土の絵巻";
+
+                }
+
+            }
+
+            else if (r < 0.1052 && 0.0976 < r) {
+                i = Math.random() * 101;
+
+                if (i > 50) {
+                    x = "墨・木に咲く花";
+                }
+
+                else if (50 > i) {
+                    x = "翠・木に咲く花";
+
+                }
+
+
+
+            }
+
+            else if (r < 0.1165 && 0.1052 < r) {
+                i = Math.random() * 101;
+
+                if (i < 50) {
+                    x = "墨・黄梁の夢";
+                }
+
+                else if (50 < i) {
+                    x = "翠・黄梁の夢";
+
+                }
+
+
+            }
+
+            else if (r < 0.1335 && 0.1165 < r) {
+                i = Math.random() * 101;
+
+                if (i < 50) {
+                    x = "墨・巻き幕に飛ぶ燕";
+                }
+
+                else if (50 < i) {
+                    x = "翠・巻き幕に飛ぶ燕";
+
+                }
+
+
+            }
+
+            else if (r < 0.1675 && 0.1335 < r) {
+                x = "翠・春に現れし一羽の燕";
+
+            }
+
+            else if (r < 0.2355 && 0.1675 < r) {
+                x = "翠・満天の星";
+
+            }
+
+            else if (r < 0.3035 && 0.3255 < r) {
+                x = "翠・山を掠める燕";
+
+            }
+
+            else if (r < 0.3888 && 0.3035 < r) {
+                x = "翠墨自選ボックス";
+
+            }
+
+            else if (r < 0.4741 && 0.3888 < r) {
+                x = "金塊12000";
+
+            }
+
+            else if (r < 0.5594 && 0.4741 < r) {
+                x = "破れたページ60";
+
+            }
+
+            else if (r < 0.7584 && 0.5594 < r) {
+                x = "基礎自選ボックス";
+
+            }
+
+            else if (r < 0.9289 && 0.7584 < r) {
+                x = "スキルポイント3000";
+
+            }
+
+            else if (r < 1 && 0.9289 < r) {
+                x = "新貨幣3000";
+
+            }
+
+            if (z == 1) {
+                document.getElementById("haisyutu").innerHTML = x;
+                document.getElementById("date").innerHTML = r;
+
+            }
+
+            else if (z == 2) {
+                document.getElementById("haisyutu2").innerHTML = x;
+                document.getElementById("date2").innerHTML = r;
+
+            }
+
+            else if (z == 3) {
+                document.getElementById("haisyutu3").innerHTML = x;
+                document.getElementById("date3").innerHTML = r;
+
+            }
+
+            else if (z == 4) {
+                document.getElementById("haisyutu4").innerHTML = x;
+                document.getElementById("date4").innerHTML = r;
+
+            }
+
+            else if (z == 5) {
+                document.getElementById("haisyutu5").innerHTML = x;
+                document.getElementById("date5").innerHTML = r;
+
+            }
+
+
+            count = count + 1;
+            document.getElementById("kaisu").innerHTML = count;
+            document.getElementById("aizo").innerHTML = y;
+            document.getElementById("aizo1").innerHTML =m;
+
+        }
+    }
+
 
 </script>
