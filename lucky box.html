@@ -11,6 +11,8 @@
 
         <input type="button" value="小切手500：５回:" onclick="gacha5()">
 
+        <input type="button" value="最大999連" onclick="gacha999()">
+
     </from>
 
     <table border="0">
@@ -732,6 +734,274 @@
             }
         }
 
+        function gacha999() {
+
+            z = 0
+
+
+            while (z < 999) {
+
+                z = z + 1
+                pt = pt + 100
+
+
+                r = Math.random();
+
+
+                if (r < 0.0023) {
+                    x = "愛蔵：メルトタイガー";
+                    a1 = a1 + 1;
+
+                }
+
+                else if (r < 0.0057 && 0.0023 < r) {
+                    x = "烈火獅子王";
+                    a2 = a2 + 1;
+
+                }
+
+                else if (r < 0.0142 && 0.0057 < r) {
+                    x = "雷轟獅子";
+                    a3 = a3 + 1;
+
+                }
+
+                else if (r < 0.0369 && 0.0142 < r) {
+                    x = "自爆ドローン";
+                    a4 = a4 + 1;
+
+                }
+
+                else if (r < 0.0403 && 0.0369 < r) {
+                    x = "愛蔵：アイアンアーム";
+                    a5 = a5 + 1;
+
+                }
+
+                else if (r < 0.0448 && 0.0403 < r) {
+                    x = "飛行巨獣";
+                    a6 = a6 + 1;
+
+
+                }
+
+                else if (r < 0.0533 && 0.0448 < r) {
+                    x = "黒曜マンモス";
+                    a7 = a7 + 1;
+
+                }
+
+                else if (r < 0.0760 && 0.0533 < r) {
+                    x = "重荷ドローン";
+                    a8 = a8 + 1;
+
+                }
+
+                else if (r < 0.0931 && 0.0760 < r) {
+                    x = "破れたページ999";
+                    a9 = a9 + 1;
+
+                }
+
+                else if (r < 0.0976 && 0.0931 < r) {
+                    i = Math.random() * 101;
+
+                    if (i < 33.333) {
+                        x = "墨・国土の絵巻";
+                        a10 = a10 + 1;
+
+                    }
+
+                    else if (r > 33.33 && 66.66 > r) {
+                        x = "翠・国土の絵巻";
+                        a11 = a11 + 1;
+
+                    }
+
+                    else if (r > 66.66) {
+                        x = "曜・国土の絵巻";
+                        a12 = a12 + 1;
+
+                    }
+
+                }
+
+                else if (r < 0.1052 && 0.0976 < r) {
+                    i = Math.random() * 101;
+
+                    if (i > 50) {
+                        x = "墨・木に咲く花";
+                        a13 = a13 + 1;
+                    }
+
+                    else if (50 > i) {
+                        x = "翠・木に咲く花";
+                        a14 = a14 + 1;
+
+                    }
+
+
+
+                }
+
+                else if (r < 0.1165 && 0.1052 < r) {
+                    i = Math.random() * 101;
+
+                    if (i < 50) {
+                        x = "墨・黄梁の夢";
+                        a15 = a15 + 1;
+                    }
+
+                    else if (50 < i) {
+                        x = "翠・黄梁の夢";
+                        a16 = a16 + 1;
+
+                    }
+
+
+                }
+
+                else if (r < 0.1335 && 0.1165 < r) {
+                    i = Math.random() * 101;
+
+                    if (i < 50) {
+                        x = "墨・巻き幕に飛ぶ燕";
+                        a17 = a17 + 1;
+                    }
+
+                    else if (50 < i) {
+                        x = "翠・巻き幕に飛ぶ燕";
+                        a18 = a18 + 1;
+
+                    }
+
+
+                }
+
+                else if (r < 0.1675 && 0.1335 < r) {
+                    x = "翠・春に現れし一羽の燕";
+                    a19 = a19 + 1;
+
+                }
+
+                else if (r < 0.2355 && 0.1675 < r) {
+                    x = "翠・満天の星";
+                    a20 = a20 + 1;
+
+                }
+
+                else if (r < 0.3035 && 0.3255 < r) {
+                    x = "翠・山を掠める燕";
+                    a21 = a21 + 1;
+
+                }
+
+                else if (r < 0.3888 && 0.3035 < r) {
+                    x = "翠墨自選ボックス";
+                    a22 = a22 + 1;
+
+                }
+
+                else if (r < 0.4741 && 0.3888 < r) {
+                    x = "金塊12000";
+                    a23 = a23 + 1;
+
+                }
+
+                else if (r < 0.5594 && 0.4741 < r) {
+                    x = "破れたページ60";
+                    a24 = a24 + 1;
+
+                }
+
+                else if (r < 0.7584 && 0.5594 < r) {
+                    x = "基礎自選ボックス";
+                    a25 = a25 + 1;
+
+                }
+
+                else if (r < 0.9289 && 0.7584 < r) {
+                    x = "スキルポイント3000";
+                    a26 = a26 + 1;
+
+                }
+
+                else if (r < 1 && 0.9289 < r) {
+                    x = "新貨幣3000";
+                    a27 = a27 + 1;
+
+                }
+
+
+                if (z == 1) {
+                    document.getElementById("haisyutu").innerHTML = x;
+
+
+                }
+
+                else if (z == 2) {
+                    document.getElementById("haisyutu2").innerHTML = x;
+
+
+                }
+
+                else if (z == 3) {
+                    document.getElementById("haisyutu3").innerHTML = x;
+
+
+                }
+
+                else if (z == 4) {
+                    document.getElementById("haisyutu4").innerHTML = x;
+
+
+                }
+
+                else if (z == 5) {
+                    document.getElementById("haisyutu5").innerHTML = x;
+
+
+                }
+
+
+                count = count + 1;
+                document.getElementById("kaisu").innerHTML = count;
+
+                document.getElementById("point").innerHTML = pt;
+                document.getElementById("a01").innerHTML = a1 + "個";
+                document.getElementById("a02").innerHTML = a2 + "個";
+                document.getElementById("a03").innerHTML = a3 + "個";
+                document.getElementById("a04").innerHTML = a4 + "個";
+                document.getElementById("a05").innerHTML = a5 + "個";
+                document.getElementById("a06").innerHTML = a6 + "個";
+                document.getElementById("a07").innerHTML = a7 + "個";
+                document.getElementById("a08").innerHTML = a8 + "個";
+                document.getElementById("a09").innerHTML = a9 + "個";
+                document.getElementById("a010").innerHTML = a10 + "個";
+                document.getElementById("a011").innerHTML = a11 + "個";
+                document.getElementById("a012").innerHTML = a12 + "個";
+                document.getElementById("a013").innerHTML = a13 + "個";
+                document.getElementById("a014").innerHTML = a14 + "個";
+                document.getElementById("a015").innerHTML = a15 + "個";
+                document.getElementById("a016").innerHTML = a16 + "個";
+                document.getElementById("a017").innerHTML = a17 + "個";
+                document.getElementById("a018").innerHTML = a18 + "個";
+                document.getElementById("a019").innerHTML = a19 + "個";
+                document.getElementById("a020").innerHTML = a20 + "個";
+                document.getElementById("a021").innerHTML = a21 + "個";
+                document.getElementById("a022").innerHTML = a22 + "個";
+                document.getElementById("a023").innerHTML = a23 + "個";
+                document.getElementById("a024").innerHTML = a24 + "個";
+                document.getElementById("a025").innerHTML = a25 + "個";
+                document.getElementById("a026").innerHTML = a26 + "個";
+                document.getElementById("a027").innerHTML = a27 + "個";
+
+                money = pt * 1.952;
+                document.getElementById("cash").innerHTML = money + "円";
+
+
+            }
+        }
 
     </script>
 
