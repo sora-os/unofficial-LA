@@ -1,0 +1,30 @@
+body {
+}
+
+input {
+    font-size: 15px;
+    background-image: linear-gradient(0deg, #a7d9f5, #eaf6fd); /* グラデーション */
+    border: 1px solid #3c7fb1; /* 枠線 */
+    border-radius: 0.3em; /* 角丸 */
+}
+
+div id_a04{
+    color:red;
+}
+
+
+table {
+    text-align: center;
+}
+
+table th { /*table内のthに対して*/
+    padding: 10px; /*上下左右10pxずつ*/
+}
+
+    table td { /*table内のtdに対して*/
+        padding: 3px 10px; /*上下3pxで左右10px*/
+    }
+    
+   table {
+border-collapse: collapse;
+}
