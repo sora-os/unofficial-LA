@@ -1,0 +1,190 @@
+<h1>3/18 ラッキーボックス</h1>
+
+<from name="forml">
+    <input type="button" value="1回回す" onclick="gacha()">
+</from>
+
+<br/>
+獲得アイテム：<div id="haisyutu">-</div>
+<br/>
+
+ガチャ回数：<div id="kaisu">-</div>
+<br/>
+
+date:<div id="date"></div>
+
+
+<script type="text/javascript">
+
+    count = 0;
+
+    function gacha() {
+
+     
+        r = Math.random() * 101;
+
+        document.getElementById("date").innerHTML = r;
+
+        if (r < 0.23) {
+            document.getElementById("haisyutu").innerHTML = "愛蔵：メルトタイガー";
+
+        }
+
+        else if (r < 0.57 && 0.23 > r) {
+            document.getElementById("haisyutu").innerHTML = "烈火獅子王";
+
+        }
+        
+        else if (r < 1.42 && 0.57 > r) {
+            document.getElementById("haisyutu").innerHTML = "雷轟獅子";
+
+        }
+
+        else if (r < 3.69 && 1.42 > r) {
+            document.getElementById("haisyutu").innerHTML = "自爆ドローン";
+
+        }
+
+        else if (r < 4.03 && 3.69 > r) {
+            document.getElementById("haisyutu").innerHTML = "愛蔵：アイアンアーム";
+
+        }
+
+        else if (r < 4.48 && 4.03 > r) {
+            document.getElementById("haisyutu").innerHTML = "飛行巨獣";
+
+
+        }
+
+        else if (r < 5.33 && 4.48 > r) {
+            document.getElementById("haisyutu").innerHTML = "黒曜マンモス";
+
+        }
+
+        else if (r < 7.60 && 5.33 > r) {
+            document.getElementById("haisyutu").innerHTML = "重荷ドローン";
+
+        }
+
+        else if (r < 9.31 && 7.60 > r) {
+            document.getElementById("haisyutu").innerHTML = "破れたページ999";
+
+        }
+
+        else if (r < 9.76 && 9.31 > r) {
+            i = Math.random() * 101;
+
+            if (i > 33.333) {
+                document.getElementById("haisyutu").innerHTML = "墨・国土の絵巻";
+
+            }
+
+            else if (r > 33.33 && 66.66 < r) {
+                document.getElementById("haisyutu").innerHTML = "翠・国土の絵巻";
+
+            }
+
+            else if (r > 66.66) {
+                document.getElementById("haisyutu").innerHTML = "曜・国土の絵巻";
+
+            }
+
+        }
+
+        else if (r < 10.52 && 9.76 > r) {
+            i = Math.random() * 101;
+
+            if (i > 50) {
+                document.getElementById("haisyutu").innerHTML = "墨・木に咲く花";
+            }
+
+            else if(50 < i){
+                document.getElementById("haisyutu").innerHTML = "翠・木に咲く花";
+
+            }
+
+            
+
+        }
+
+        else if (r < 11.65 && 10.52 > r) {
+            i = Math.random() * 101;
+
+            if (i > 50) {
+                document.getElementById("haisyutu").innerHTML = "墨・黄梁の夢";
+            }
+
+            else if(50 < i){
+                document.getElementById("haisyutu").innerHTML = "翠・黄梁の夢";
+
+            }
+            
+
+        }
+
+        else if (r < 13.35 && 11.65 > r) {
+            i = Math.random() * 101;
+
+            if (i > 50) {
+                document.getElementById("haisyutu").innerHTML = "墨・巻き幕に飛ぶ燕";
+            }
+
+            else if(50 < i){
+                document.getElementById("haisyutu").innerHTML = "翠・巻き幕に飛ぶ燕";
+
+            }
+            
+
+        }
+
+        else if (r < 16.75 && 13.35 > r) {
+            document.getElementById("haisyutu").innerHTML = "翠・春に現れし一羽の燕";
+
+        }
+
+        else if (r < 23.55 && 16.75 > r) {
+            document.getElementById("haisyutu").innerHTML = "翠・満天の星";
+
+        }
+
+        else if (r < 30.35 && 32.55 > r) {
+            document.getElementById("haisyutu").innerHTML = "翠・山を掠める燕";
+
+        }
+
+        else if (r < 38.88 && 30.35 > r) {
+            document.getElementById("haisyutu").innerHTML = "翠墨自選ボックス";
+
+        }
+
+        else if (r < 47.41 && 38.88 > r) {
+            document.getElementById("haisyutu").innerHTML = "金塊12000";
+
+        }
+
+        else if (r < 55.94 && 47.41 > r) {
+            document.getElementById("haisyutu").innerHTML = "破れたページ60";
+
+        }
+
+        else if (r < 75.84 && 55.94 > r) {
+            document.getElementById("haisyutu").innerHTML = "基礎自選ボックス";
+
+        }
+
+        else if (r < 92.89 && 75.84 > r) {
+            document.getElementById("haisyutu").innerHTML = "スキルポイント3000";
+
+        }
+
+        else if (r < 100.00 && 92.89 > r) {
+            document.getElementById("haisyutu").innerHTML = "新貨幣3000";
+
+        }
+
+        count = count + 1;
+        document.getElementById("kaisu").innerHTML = count;
+
+    }
+
+</script>
